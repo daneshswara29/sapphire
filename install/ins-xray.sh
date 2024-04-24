@@ -134,17 +134,17 @@ cat> /usr/local/etc/xray/config.json << END
                         "xver": 1
                     },
                     {
-                        "path": "/nevermore-vlesswstls", # // VMESS WS TLS
+                        "path": "/vless", # // VMESS WS TLS
                         "dest": 1212,
                         "xver": 1
                     },
                     {
-                        "path": "/nevermore-vmesswstls", # // VLESS WS TLS
+                        "path": "/vmess", # // VLESS WS TLS
                         "dest": 1213,
                         "xver": 1
                     },
                     {
-                        "path": "/nevermore-trojanwstls", # // TROJAN WS TLS
+                        "path": "/trojan", # // TROJAN WS TLS
                         "dest": 1214,
                         "xver": 1
                     }
@@ -390,7 +390,7 @@ cat> /usr/local/etc/xray/vless.json << END
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": true,
-                    "path": "/nevermore-vlesswstls"
+                    "path": "/vless"
                 }
             }
         }
@@ -500,7 +500,7 @@ cat> /usr/local/etc/xray/vlessnone.json << END
          "network": "ws",
             "wsSettings": {
               "acceptProxyProtocol": true,
-                "path": "/nevermore-vlesswsntls"
+                "path": "/vless"
 
                 }
             }
@@ -614,7 +614,7 @@ cat> /usr/local/etc/xray/vmess.json << END
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": true,
-                    "path": "/nevermore-vmesswstls"
+                    "path": "/vmess"
                 }
             }
         }
@@ -724,7 +724,7 @@ cat> /usr/local/etc/xray/vmessnone.json << END
          "network": "ws",
             "wsSettings": {
               "acceptProxyProtocol": true,
-                "path": "/nevermore-vmesswsntls"
+                "path": "/vmess"
                 }
             }
         }
@@ -836,7 +836,7 @@ cat> /usr/local/etc/xray/trojan.json << END
            "network": "ws",
            "wsSettings": {
              "acceptProxyProtocol": true,
-               "path": "/nevermore-trojanwstls"
+               "path": "/trojan"
              }
           }
        }
@@ -947,7 +947,7 @@ cat> /usr/local/etc/xray/trojannone.json << END
            "network": "ws",
            "wsSettings": {
              "acceptProxyProtocol": true,
-               "path": "/nevermore-trojanwsntls"
+               "path": "/trojan"
              }
           }
        }
@@ -1057,17 +1057,17 @@ cat> /usr/local/etc/xray/none.json << END
             "xver": 1
           },
           {
-            "path": "/nevermore-vlesswsntls", # // VLESS NONE
+            "path": "/vless", # // VLESS NONE
             "dest": 1301,
             "xver": 1
           },
           {
-            "path": "/nevermore-vmesswsntls", # // VMESS NONE
+            "path": "/vmess", # // VMESS NONE
             "dest": 1302,
             "xver": 1
           },
           {
-             "path": "/nevermore-trojanwsntls", # // TROJAN NONE
+             "path": "/trojan", # // TROJAN NONE
             "dest": 1303,
             "xver": 1
           }
