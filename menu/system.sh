@@ -48,6 +48,7 @@ echo -e "   \e[$number (17)\e[m \e[$below Change Password VPS\e[m"
 echo -e "   \e[$number (18)\e[m \e[$below Check CPU & RAM\e[m"
 echo -e "   \e[$number (19)\e[m \e[$below Change Banner SSH\e[m"
 echo -e "   \e[$number (20)\e[m \e[$below SwapRAM Menu \e[m"
+echo -e "   \e[$number (21)\e[m \e[$below Jam reboot\e[m"
 echo -e ""
 echo -e "   \e[$number (77)\e[m \e[$below Install SlowDNS\e[m"
 echo -e "   \e[$number (88)\e[m \e[$below Install UDP Custom\e[m"
@@ -118,6 +119,9 @@ message-ssh
 ;;
 20)
 wget -q -O /usr/bin/swapram "https://raw.githubusercontent.com/daneshswara29/swapram/main/swapram.sh" && chmod +x /usr/bin/swapram && swapram
+;;
+21)
+jam
 ;;
 77)
 wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main2/addons/dns2.sh && chmod +x dns2.sh && ./dns2.sh
